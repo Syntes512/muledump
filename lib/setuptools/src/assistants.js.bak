@@ -183,28 +183,3 @@ setuptools.app.assistants.rendersupdate = function(data) {
     setuptools.lightbox.display('rendersupdate-assistant', {variant: 'select'});
 
 };
-
-//  assist the user in upgrading to the new Jakcodex/Muledump CORS Adapter extension
-setuptools.app.assistants.jakcodexcors = function() {
-
-    var variant = '';
-    if ( setuptools.browser === 'chrome' ) variant = 'Chrome';
-    if ( setuptools.browser === 'Opera' ) variant = 'Opera';
-    if ( variant === '' ) return;
-
-    setuptools.lightbox.build('jakcodexcors-extension-notice', " \
-        Muledump с радостью представляет новое расширение CORS!\
-        <br><br>\
-        <div class='flex-container'>\
-            <a href='https://chrome.google.com/webstore/detail/jakcodexmuledump-cors-ada/iimhkldbldnmapepklmeeinclchfkddd' target='_blank'>\
-                <div class='menuStyle formStyle textCenter mr0 cboth' style='width: 300px;'>Jakcodex/Muledump CORS Adapter</div>\
-            </a>\
-        </div>\
-        <br>Начиная с добавления аналитики, мы теперь знаем, что 65% пользователей ежедневно испытывают проблемы с CORS. Многие пользователи испытывают это несколько раз за день. Это просто неприемлемо.\
-        <br><br>Это новое расширение всегда включено и не требует настройки. Удалите старое расширение, установите новое, и вы готовы к работе! \
-        <br><br>Более подробно вы сможете узнать на <a href='https://github.com/jakcodex/muledump/wiki/Muledump+CORS+Adapter' target='_blank'>Muledump CORS Adapter</a>, на wiki-страничке.\
-    ");
-    setuptools.lightbox.settitle('jakcodexcors-extension-notice', 'Новое ' + variant + ' расширение');
-    setuptools.lightbox.display('jakcodexcors-extension-notice', {variant: 'fl-Notice'});
-
-};

@@ -35,6 +35,7 @@
 	<script type="application/javascript" src="lib/setuptools/src/muledump.js"></script>
 	<script type="application/javascript" src="lib/setuptools/src/storage.js"></script>
 	<script type="application/javascript" src="lib/setuptools/src/upgrade.js"></script>
+	<script type="application/javascript" src="lib/setuptools/src/mulequeue.js"></script>
 	<script type="application/javascript" src="lib/mule.js"></script>
 	<script type="application/javascript" src="lib/muledump.js"></script>
 	<script type="application/javascript" src="lib/setuptools/src/analytics.js"></script>
@@ -43,21 +44,19 @@
 	<span id="accopts" style="display: none;" class="menu"></span>
 	<div class="handle"><span id="options" class="menu"></span></div>
 	<div id="fix">
+		<div id="previewnotice"></div>
 		<div id="stickynotice"></div>
 		<div id="top">
-			<div id="cnt" style="display: none;">MuleQueue запущен...</div>
 			<div id="notice" style="display: none;">Уведомление</div>
 			<div class="handle options"><span>Опции</span></div>
 			<div id="setuptools">Установки</div>
-			<div id="reloader">Перезагрузить</div>
-			<div id="resume" style="display: none;">Возобновить</div>
+			<div id="mulequeue">Перезагрузка</div>
 			<div class="handle"><span>Экспорт</span><span id="export" class="menu"></span></div>
 			<div id="about">Подробнее</div>
 			<a href="https://github.com/jakcodex/muledump" target="_blank">GitHub</a>
 		</div>
 	</div>
 	<div id="main">
-		<div id="techreport"></div>
 		<div id="totals" style="display: none;"></div>
 		<div id="errors"></div>
 		<div id="stage"></div>

@@ -353,38 +353,27 @@ setuptools.app.ga = function(command, action, value1, value2, value3, value4, va
 
         }
 
-        if ( setuptools.state.loaded === true ) analytics('set', 'userId', setuptools.data.userid);
+        analytics('set', 'userId', setuptools.data.userid);
         analytics('create', setuptools.config.ga);
         analytics('send', 'pageview');
         setuptools.tmp.gaInterval = setInterval(setuptools.app.ga, setuptools.config.gaInterval, 'send', {hitType: 'pageview', page: '#ping'});
 
-        if ( setuptools.state.loaded === true ) {
+        if ( setuptools.data.config.gaTotals === true ) analytics('send', 'event', {
+            eventCategory: 'totals',
+            eventAction: 'accounts',
+            eventValue: Object.keys(setuptools.data.accounts.accounts).length
+        });
 
-            if (setuptools.data.config.gaTotals === true) analytics('send', 'event', {
-                eventCategory: 'totals',
-                eventAction: 'accounts',
-                eventValue: Object.keys(setuptools.data.accounts.accounts).length
-            });
+        if ( setuptools.data.config.gaTotals === true ) analytics('send', 'event', {
+            eventCategory: 'totals',
+            eventAction: 'totalGroups',
+            eventValue: setuptools.data.groups.groupList.length
+        });
 
-            if (setuptools.data.config.gaTotals === true) analytics('send', 'event', {
-                eventCategory: 'totals',
-                eventAction: 'totalGroups',
-                eventValue: setuptools.data.groups.groupList.length
-            });
-
-            analytics('send', 'event', {
-                eventCategory: 'runtimeMode',
-                eventAction: 'loaded'
-            });
-
-        } else {
-
-            analytics('send', 'event', {
-                eventCategory: 'runtimeMode',
-                eventAction: 'newUser'
-            });
-
-        }
+        analytics('send', 'event', {
+            eventCategory: 'runtimeMode',
+            eventAction: 'loaded'
+        });
 
         return;
 
@@ -400,7 +389,7 @@ setuptools.app.ga = function(command, action, value1, value2, value3, value4, va
     if (
         ( action === 'event' && ['rateLimited', 'corsError', 'accountBanned', 'genericServerError', 'export-imgur-error', 'export-imgur-networkError', 'export-imgur-httpError', 'export-img-loadError'].indexOf(value1.eventAction) > -1 && setuptools.data.config.gaErrors === true ) ||
         ( action === 'event' && ['staleCache', 'charSortCustom', 'wawawa', 'export-txt', 'export-csv', 'export-json', 'export-img', 'export-imgur', 'export-html2canvas'].indexOf(value1.eventAction) > -1 && setuptools.data.config.gaOptions === true ) ||
-        ( action === 'event' && ['reloadSingle', 'reloadAll', 'runtimeMode'].indexOf(value1.eventAction) > -1 ) ||
+        ( action === 'event' && ['reloadAccounts', 'runtimeMode'].indexOf(value1.eventAction) > -1 ) ||
         ( typeof action === 'object' && action.hitType === 'pageview' && action.page === '#ping' && setuptools.data.config.gaPing === true ) ||
         ( typeof action === 'object' && action.hitType === 'pageview' && action.page !== '#ping' )
     ) analytics(command, action, value1, value2, value3, value4, value5);

@@ -1,3 +1,8 @@
+![Jakcodex/Muledump](https://img.shields.io/badge/jakcodex-muledump-blue.svg?style=flat-square)
+[![Muledump Local](https://img.shields.io/badge/dynamic/json.svg?label=local&colorB=4286f4&prefix=v&suffix=&query=$.version&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjakcodex%2Fmuledump%2Fmaster%2Fpackage.json)](https://github.com/jakcodex/muledump/releases/)
+[![Muledump Online](https://img.shields.io/badge/dynamic/json.svg?label=online&colorB=9e43f9&prefix=v&suffix=&query=$.version&uri=https%3A%2F%2Fjakcodex.github.io%2Fmuledump%2Fpackage.json)](https://jakcodex.github.io/muledump/muledump.html)
+[![Muledump Preview](https://img.shields.io/badge/dynamic/json.svg?label=preview&colorB=5942f4&prefix=v&suffix=&query=$.version&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjakcodex%2Fmuledump-preview%2Fmaster%2Fpackage.json)](https://jakcodex.github.io/muledump-preview/muledump.html)
+
 ## Welcome
 
 This is a fork of Atomizer's [Muledump](https://github.com/atomizer) made to address the required changes since the most recent upstream release.
@@ -20,9 +25,9 @@ See the [Requirements](REQUIREMENTS.md) page for more information.
 
 ## Release Information
 
-The current version is Jakcodex/Muledump v9.0.
+This is a preview release of Jakcodex/Muledump v9.1.
 
-Muledump Online is available hosted on Github [here](https://jakcodex.github.io/muledump/muledump.html).
+Muledump Online is available hosted on Github [here](https://jakcodex.github.io/muledump-preview/muledump.html).
 
 All released versions are available for download [here](https://github.com/jakcodex/muledump/releases).
 
@@ -63,7 +68,6 @@ All released versions are available for download [here](https://github.com/jakco
 - ctrl-click account name to temporarily hide it from totals
 - logins thru muledump count towards daily login calendar
 - account settings include automatic reload, login-only (daily calendar only), and cache disable
-- right click anywhere on a mule to access the mule menu
 
 ## Check out the [Frequently Asked Questions](https://github.com/jakcodex/muledump/wiki/Frequently-Asked-Questions) and explore the [wiki](https://github.com/jakcodex/muledump/wiki) for more information!
 
