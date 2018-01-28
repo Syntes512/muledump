@@ -5,46 +5,46 @@
 
 ## Welcome
 
-This is a fork of Atomizer's [Muledump](https://github.com/atomizer) made to address the required changes since the most recent upstream release.
+Это переработка оригинального [Muledump](https://github.com/atomizer) от Atomizer, первоначальной идеей заключалось исправление некоторых ошибок.
 
-You can read about the reasoning for a new fork in the [upstream notes](UPSTREAM.md).
+Вы можете прочитать про причины создания новой версии в файле [upstream notes](UPSTREAM.md).
 
-## Synopsis
+## Обзор
 
-This tool allows you to list contents of all your accounts in a single page (characters, their stats and items, items in vaults). Also it generates a summary of all the items - you probably saw screenshots of these in trading forum ([example](https://imgur.com/dDA2vC9)).
+Этот инструмент позволяет вам отображать содержимое всех ваших учетных записей на одной странице (персонажей, их статистику и вещи, вещи в сундуках). Также он генерирует сводку всех предметов - вы, вероятно, видели скриншоты на торговом форуме ([пример](https://imgur.com/dDA2vC9)).
 
-The point of playing the game is to have fun. Muling is not fun. I am trying to increase overall fun ratio by decreasing amount of time spent fussing with mules and storagekeeping.
+Основная цель игры - получать удовольствие. Как известно, мулинг - не является веселым занятием. Мы попытались увеличить общее соотношение удовольствия, уменьшив количество затрачиваемого времени на мулинг.
 
-## Requirements
+## Требования
 
-Currently due to how Deca handles requests to ROTMG servers a browser extension is required to use this Muledump.
+В настоящее время из-за того, как Deca обрабатывают запросы к своим серверам мы вынуждены использовать специальное расширение.
 
-See the [Requirements](REQUIREMENTS.md) page for more information.
+Просмотрите файл [Requirements](REQUIREMENTS.md) для получения более полной информации.
 
-### Head over to [Installation and Setup](https://github.com/jakcodex/muledump/wiki/Installation-and-Setup) in the wiki for a detailed setup guide.
+### Перейдите к [инструкции по установке](https://github.com/Syntes512/muledump/wiki/Инструкция-по-установке) на вики, для более полного понимания всех деталей.
 
-## Release Information
+## Информация о релизе
 
-This is a preview release of Jakcodex/Muledump v9.1.
+Jakcodex/Muledump v9.1.6
 
-Muledump Online is available hosted on Github [here](https://jakcodex.github.io/muledump-preview/muledump.html).
+Muledump Online доступен по [ссылке](https://jakcodex.github.io/muledump-preview/muledump.html).
 
-All released versions are available for download [here](https://github.com/jakcodex/muledump/releases).
+Все выпущеные версии доступны [здесь](https://github.com/jakcodex/muledump/releases).
 
 ## Muledump Online Version
 
-- Open **```https://jakcodex.github.io/muledump/muledump.html```**
-- Returning users can upload a backup or import their existing accounts.js file
-- New users will be guided through first time setup
-- This version runs entirely on your local computer and is updated automatically with new releases
-- All data submitted and stored in this version never leave your computer
+- Откройте **```https://jakcodex.github.io/muledump/muledump.html```**
+- Опытные пользователи могут воспользоваться импортом accounts.js
+- Новые пользователи могут воспользоваться инструкцией по установке.
+- Эта версия будет использовать локальное хранилище вашего компьютера, все обновления будут вводиться как только выйдут.
+- Вся информация, которая будет сохраняться в процессе работы, никогда не будет отправлена куда-либо.
 
 ## Muledump Local Version
 
-- Unzip the latest muledump release
-- Open **`muledump.html`**
-- First time users will be guided thru Muledump setup
-- Returning users are ready to go immediately
+- Разархивируйте последнюю версию
+- Откройте файл **`muledump.html`**
+- Новые пользователи могут воспользоваться инструкцией по установке.
+- Опытные пользователи могут использовать импорт accounts.js
 
 ## Main Features
 
@@ -69,7 +69,7 @@ All released versions are available for download [here](https://github.com/jakco
 - logins thru muledump count towards daily login calendar
 - account settings include automatic reload, login-only (daily calendar only), and cache disable
 
-## Check out the [Frequently Asked Questions](https://github.com/jakcodex/muledump/wiki/Frequently-Asked-Questions) and explore the [wiki](https://github.com/jakcodex/muledump/wiki) for more information!
+## Проверьте [часто задаваемые вопросы](https://github.com/Syntes512/muledump/wiki/Часто-задаваемые-вопросы) и просмотрите [wiki](https://github.com/Syntes512/muledump/wiki) для получения более подробной информации!
 
 <a id="jakcodex-supportandcontributions"></a>
 ## Support and Contributions
