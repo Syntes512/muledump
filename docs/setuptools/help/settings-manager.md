@@ -2,67 +2,64 @@
 
 ### Muledump Settings
 
-#### ```Characters Displayed per Row```
-The maximum numbers of characters to be displayed in on the webpage per row. 
+#### ```Персонажи отображаемые в линию```
+Максимальное количество персонажей, которое будет отображаться на странице в линию.
 
-#### ```Enable One-click Login```
-Whether or not to enable the support of muledump:// links.
+#### ```Включить логин в один клик```
+Включает или отключает поддержку muledump:// links.
 
 #### ```Price Display in Tooltips```
-Show pricing information on screen.
+Отображает информацию о "ценности" в аннотации к предмету
 
-#### ```Use Smart Layout```
-Whether or not to use Masonry to generate the page layout.
+#### ```Использовать умную сетку```
+Используется или же нет Masonry для генерации страницы.
 
 #### ```Testing```
-Whether or not you're connecting to the production or testing ROTMG servers.
+Переключает метод отправления запросов, независимо от того какой продукт вы используете, готовый или тестовый.
 
 ### SetupTools Settings
 
-#### ```SetupTools Enabled```
-Whether or not to utilize SetupTools features or fallback on the traditional accounts.js format.
+#### ```Помощник активен```
+Использовать функции SetupTools или же использовать традиционный формат accounts.js.
 
-#### ```Account Load Delay in Seconds```
-Delay between account load times when contacting Deca servers. 
+#### ```Задержка загрузки аккаунтов```
+Задержка перед следующим отправлением запроса на перезагрузку, нужна для того, чтобы не получать ограничение от Deca.
 
-Setting this to Automatic will determine the value based on number of enabled accounts.
+Установка на показатель "Automatic" будет ориентироваться на количество ваших аккаунтов.
 
-#### ```Alert on New Version```
-Whether or not to display a notice on a new version or patch release. *Muledump Online only
+#### ```Автоматическое резервное копирование```
+Автоматически создает резервную копию конфигурации каждый день.
 
-#### ```Automatic Daily Backups```
-Automatically create a daily backup of your configuration stored in browser local storage.
+#### ```Журнал отладки```
+Записывает лог для отладки, используется разработчиками
 
-#### ```Enable Debug Logging```
-Whether or not to output the debug log to the console.
-
-#### ```Groups Manager Mode```
-Which mode Groups Manager is running in. Possible modes are:
+#### ```Режим менеджера групп```
+В каком режиме работает менеджер групп. Возможные режимы::
 
 ##### Off
-Groups Manager configuration is not loaded.
+Конфигурация не загружается.
 
 ##### On, Parallel
-Groups Manager accounts are merged with their order preserved 
+Учетные записи диспетчера групп объединены с сохраненным порядком.
 
 Example: [a, b, c] + [d, e, f] + [g, h, i] = [a, d, g, b, e, h, c, f, i]
 
 ##### On, Serial
-Groups Manager accounts are merged with their order arranged by overall order 
+Учетные записи диспетчера групп объединены по порядку.
 
 Example: [a, b, c] + [d, e, f] + [g, h, i] = [a, b, c, d, e, f, g, h, i]
 
-#### ```Longpress Length in Seconds```
-Length of time that a long left click takes to activate.
+#### ```Длительность нажатия```
+Нажатие ЛКМ для активации.
 
-#### ```Maximum Backups in Local Storage```
-SetupTools stores backups in your browser's local storage. This utilizes disk space on your computer. This feature limits the maximum number of exposed backups to keep before auto-deleting the oldest.
+#### ```Максимум резервных копий```
+В SetupTools хранятся резервные копии в локальном хранилище вашего браузера. Это использует дисковое пространство на вашем компьютере. Эта функция ограничивает максимальное количество открытых резервных копий до автоматического удаления самого старого.
 
-#### ```Menu Position```
-Position of the Muledump menu.
+#### ```Позиция меню```
+Позиция Muledump меню.
 
-#### ```Prevent Auto Download```
-When downloading data from SetupTools, this feature prevents you from accidentally downloading a backup of sensitive account information to your Downloads folder.
+#### ```Заранее скачивать обновления```
+При загрузке данных из SetupTools эта функция запрещает вам случайно загружать резервную копию конфиденциальной информации учетной записи в папку «Загрузки».
 
 ### Assistants Settings
 
