@@ -3,7 +3,7 @@
 [![Muledump Online](https://img.shields.io/badge/dynamic/json.svg?label=online&colorB=9e43f9&prefix=v&suffix=&query=$.version&uri=https%3A%2F%2Fjakcodex.github.io%2Fmuledump%2Fpackage.json)](https://jakcodex.github.io/muledump/muledump.html)
 [![Muledump Preview](https://img.shields.io/badge/dynamic/json.svg?label=preview&colorB=5942f4&prefix=v&suffix=&query=$.version&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjakcodex%2Fmuledump-preview%2Fmaster%2Fpackage.json)](https://jakcodex.github.io/muledump-preview/muledump.html)
 
-## Welcome
+## Приветствие
 
 Это переработка оригинального [Muledump](https://github.com/atomizer) от Atomizer, первоначальной идеей заключалось исправление некоторых ошибок.
 
@@ -46,55 +46,55 @@ Muledump Online доступен по [ссылке](https://jakcodex.github.io/
 - Новые пользователи могут воспользоваться инструкцией по установке.
 - Опытные пользователи могут использовать импорт accounts.js
 
-## Main Features
+## Основные возможности
 
-- Manage all of your ROTMG accounts from a single interface
-- [SetupTools](docs/setuptools/index.md) - An easy to use, browser-based user interface for managing Muledump
-- [Groups Manager](docs/setuptools/groups-manager/manager.md) - Account grouping and ordering utility to customize the Muledump accounts list
-- [Muledump Online](https://jakcodex.github.io/muledump/muledump.html) - Load Muledump directly from Github using SetupTools
-- MuleQueue - Task queuing to control the flow of requests from Muledump
-- Vault display is now fully customizable and comes with four pre-defined layouts
-- Full character skin and dye support in portraits
-- Totals filtering on fame bonus, feed power, soulbound, ut, and st
-- Character Sorting by fame, exp, total fame, class, active time, maxed stats, and custom lists
-- Character Lists allow you to create custom Muledump account layouts showing only characters you specify 
-- Exporting works with the following modes: text, csv, json, image, imgur
-- Fully compliant with Deca rate limiting
+- Управляйте вашими аккаунтами на одной странице
+- [SetupTools](docs/setuptools/index.md) - Простой в использовании пользовательский интерфейс на основе браузера для управления Muledump
+- [Groups Manager](docs/setuptools/groups-manager/manager.md) - Утилита группировки учетных записей и собственной настройки списков учетных записей Muledump
+- [Muledump Online](https://jakcodex.github.io/muledump/muledump.html) - Используйте Muledump не скачивания его на компьютер, все данные сохранятся в локальное хранилище
+- MuleQueue - Целевая очередь на обновление аккаунтов для управления потоком запросов от Muledump
+- Отображение Vault теперь полностью настраивается и поставляется с четырьмя заранее настроенными макетами
+- Полная поддержка скинов и красок в аннотациях
+- Сводка поддерживает фильтрацию предметов по количеству фида, по фейм-бонусу, по типу предмета: SB/ST/UT
+- Сортировка персонажей по фейму, количеству опыта, по итогову фейму, по классам, по количеству активного времени, по максимальным характеристикам, либо же по собственному листу сортировки
+- Листы персонажей позволят вам управлять отображением аккаунтов и создавать собственные макеты учетных записей Muledump
+- Экспорт общей сводки работает в следующие форматы: text, csv, json, image, imgur
+- Полностью совместим с ограничением запросов от Deca
 
-## Not so obvious features
+## Не столь очевидные возможности
 
-- click on item to filter accounts that hold it
-- click on account name for individual options menu
-- ctrl-click account name to temporarily hide it from totals
-- logins thru muledump count towards daily login calendar
-- account settings include automatic reload, login-only (daily calendar only), and cache disable
+- Кликните на предмете, для того чтобы отфильтровать аккаунты, на которых он присутствует
+- Кликните на имя аккаунта, для открытия персонального меню
+- Ctrl + Click позволит вам на время скрыть аккаунт из общей сводки
+- Обновление аккаунтов через Muledump позволит вам засчитать вход в игру
+- Параметры учетных записей содержат разные параметры обновления, например автоматическая перезагрузка, либо же только-логин (для ежедневного календаря), а также есть возможность отключения кэширования.
 
 ## Проверьте [часто задаваемые вопросы](https://github.com/Syntes512/muledump/wiki/Часто-задаваемые-вопросы) и просмотрите [wiki](https://github.com/Syntes512/muledump/wiki) для получения более подробной информации!
 
 <a id="jakcodex-supportandcontributions"></a>
-## Support and Contributions
+## Поддержка и распространение
 
-Jakcodex/Muledump operates its own support Discord server - [https://discord.gg/JFS5fqW](https://discord.gg/JFS5fqW).
+Jakcodex/Muledump имеет собственный сервер в [Discord](https://discord.gg/JFS5fqW).
 
-Feel free to join and ask for help getting setup, hear about new updates, offer your suggestions and feedback, or just say hi.
+Не стесняйтесь присоединяться и просите о помощи в настройке, узнайте о новых обновлениях, предложите свои предложения, напишите отзыв или просто скажите привет.
 
-If you encounter a bug, have a feature request, or have any other feedback you can also check out the [issue tracker](https://github.com/jakcodex/muledump/issues) to see if it's already being discussed. If not then you can [submit a new issue](https://github.com/jakcodex/muledump/issues/new).
+Если вы столкнулись с багом, имеете запрос на функцию или любой другой запрос, вы также можете проверить [баг-трекер](https://github.com/jakcodex/muledump/issues) чтобы узнать, есть ли это на пометке. Если вы не нашли темы по своему вопросу, то вы можете [создать новый запрос](https://github.com/jakcodex/muledump/issues/new).
 
-If you are interested in helping test new versions of this software before release then check out [Muledump Preview](https://github.com/jakcodex/muledump-preview/) for the recent stable development builds of Muledump.
+Если вы заинтересованы в тестировании новых версий до их официального выхода, вы можете проверить [Muledump Preview](https://github.com/jakcodex/muledump-preview/), там вы найдете стабильные выпуски, в которых находятся новые функции, которые в будущем будут добавлены в оригинальный Muledump.
 
-Feel free to submit pull requests or patches if you have any Muledump changes you'd like to contribute. See [Contributing](https://github.com/jakcodex/muledump/wiki/Contributing) for more information.
+Не стесняйтесь отправлять запросы на добавления или исправления, если у вас есть какие-либо рекомендации по изменению Muledump, которые вы хотели бы внести. Смотрите [Contributing](https://github.com/jakcodex/muledump/wiki/Contributing) для полее полной информации.
 
-## Version and Update Information
+## Версии и информация об обновлениях
 
-Muledump versions are described as x.y.p where x is the major version, y is the minor version, and p is the patch version.
+Версия Muledump указывается по шаблону x.y.p где x это основная версия, y это второстепенная версия, и p это версия патча.
 
-All incrementes of x or y are published as an official Muledump Local release. Subsequent patches after release will not be published as a new release.
+Все обновления x или y публикуются на официальном репозитории Muledump Local. Все изменения, которые сделаны в версиях патча, публикуются только в репозитории muledump-preview
 
-Muledump Online always runs the latest version of Muledump with all patches.
+Онлайн версия Muledump всегда запускается со всеми последними обновлениями.
 
-## Special Thanks
+## Специальная благодарность
 
-Muledump Renders and Constants are maintained by [tuvior](https://github.com/tuvior).
+Обновление изображений предметов и их описание ведет [tuvior](https://github.com/tuvior).
 
 ## FYI
 
