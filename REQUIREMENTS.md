@@ -1,19 +1,19 @@
-## Requirements for Muledump
+## Требования для Muledump
 
-### CORS Browser Extension
+### CORS Расширение для браузера
 
-In order to get around browser restrictions when attempting to contact Deca servers, Muledump presently needs a browser extension to make its requests work.
+Чтобы обойти ограничения браузера при попытке связаться с серверами Deca, Muledump в настоящее время нуждается в расширении браузера, чтобы его запросы работали.
 
-#### Google Chrome (recommended)
-- Requires the extension **[Jakcodex/Muledump CORS Adapter](https://chrome.google.com/webstore/detail/jakcodexmuledump-cors-ada/iimhkldbldnmapepklmeeinclchfkddd)**
+#### Google Chrome (рекомендуется)
+- Установите расширение **[Jakcodex/Muledump CORS Adapter](https://chrome.google.com/webstore/detail/jakcodexmuledump-cors-ada/iimhkldbldnmapepklmeeinclchfkddd)**
 
 #### Opera
-- Requires the Opera extension **[Download Chrome Extension](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/?display=en)**
-- Requires the Chrome extension **[Jakcodex/Muledump CORS Adapter](https://chrome.google.com/webstore/detail/jakcodexmuledump-cors-ada/iimhkldbldnmapepklmeeinclchfkddd)**
+- Установите расширение **[Download Chrome Extension](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/?display=en)**
+- Теперь установите расширение для Google **[Jakcodex/Muledump CORS Adapter](https://chrome.google.com/webstore/detail/jakcodexmuledump-cors-ada/iimhkldbldnmapepklmeeinclchfkddd)**
 
 #### Firefox
-- Requires the extension **[CORS Everywhere](https://addons.mozilla.org/en-us/firefox/addon/cors-everywhere/)**
-- When you wish to run Muledump, turn on this extension as described [here](https://github.com/spenibus/cors-everywhere-firefox-addon/blob/master/README.md).
+- Установите расширение **[CORS Everywhere](https://addons.mozilla.org/en-us/firefox/addon/cors-everywhere/)**
+- Когда вы запускаете Muledump, переключите расширение как описано [здесь](https://github.com/spenibus/cors-everywhere-firefox-addon/blob/master/README.md).
 
-#### IE and Edge
-- Please join us in the 21st century and choose a new browser from the above list.
+#### IE и Edge
+- Присоединяйтесь к нам в 21 веке и выберите новый браузер из приведенного выше списка.
