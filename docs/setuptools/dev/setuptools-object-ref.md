@@ -145,7 +145,7 @@ This currently consists of a single key. `setuptools.config.muledump.corsAttempt
 The number of seconds the notices monitor will run before exiting.
 
 #### setuptools.config.oneclickHelp
-`[default: string|https://github.com/jakcodex/muledump/wiki/One-Click-Login]`
+`[default: string|https://github.com/Syntes512/muledump/wiki/Логин-в-один-клик]`
 
 URL to the One-click login wiki page.
 
@@ -160,7 +160,7 @@ Time in milliseconds after which to consider load time a performance issue.
 Minimum number of recommended CPU cores.
 
 #### setuptools.config.rateLimitHelp
-`[default: string|https://github.com/jakcodex/muledump/wiki/Rate-Limiting]`
+`[default: string|https://github.com/Syntes512/muledump/wiki/Ограничение-запросов]`
 
 URL to the Rate Limiting information wiki page.
 
@@ -439,7 +439,7 @@ A clone of setuptools.data.config default values and used in restoring default s
 
 #### setuptools.init.main()
 
-Begins initialization of SetupTools by determining eligibility to run. 
+Begins initialization of SetupTools by determining eligibility to run.
 
 * Checks for existence of accounts.js file
 * Tests for local storage support
@@ -466,13 +466,13 @@ If skipPrefix=true then just key is used for the key name.
 #### setuptools.storage.read(string key [, skipPrefix=false])
 
 Reads the value from local storage using setuptools.config.keyPrefix+key for the key name.
-                                         
+
 If skipPrefix=true then just key is used for the key name.
 
 #### setuptools.storage.delete(key)
 
 Deletes the key from local storage using `setuptools.config.keyPrefix`+`key` for the key name.
- 
+
 #### setuptools.storage.test()
 
 Tests whether or not local storage works on the browser.
@@ -480,7 +480,7 @@ Tests whether or not local storage works on the browser.
 ### <a id="setuptools.lightbox" href="#"></a>Lightbox Management - setuptools.lightbox
 
 This utility uses <a href="https://github.com/noelboss/featherlight" target="_blank">Featherlight</a> to create the lightboxes in use within SetupTools.
- 
+
 ```js
 setuptools.lightbox.create(html data [, object config, string title='Muledump Setup'])
 ````
@@ -491,13 +491,13 @@ Configuration object options can be seen in the Featherlight <a href="https://gi
 
 #### setuptools.lightbox.override(string targetPage, string targetAction [, function callback, object data])
 
-Overrides the targetAction of other pages by changing the callback and/or data object. 
+Overrides the targetAction of other pages by changing the callback and/or data object.
 
 For example, say you're sending a user to setuptools.app.accounts.manager() from setuptools.app.myspace.method(). By default, setuptools.app.accounts.manager() will include a goback link to setuptools.app.index(). You can override this behavior with:
 
 ```js
 setuptools.lightbox.build('myspace-method', ' \
-    Hello! This is my page. \ 
+    Hello! This is my page. \
     Go to <a href="#" class="setuptools link accountsmanager">Accounts Manager</a> \
 ');
 setuptools.lightbox.settitle('myspace-method', 'My Method Title');
@@ -519,12 +519,12 @@ Processes and removes all special build data for the specified page (settitle, g
 #### setuptools.lightbox.ajax(object e, object drawhelpData, object self [, boolean net=false])
 
 This method is intended to be bound to a link to the Github Pages hostname. It is primarily bound thru the drawhelp button, but it can be used on custom links as well.
- 
+
 Makes an ajax call to the link href and builds a lightbox with the response data. Example:
 
 ```js
 setuptools.lightbox.build('myspace-method', ' \
-    Hello! This is my page. \ 
+    Hello! This is my page. \
     Go to <a href="https://jakcodex.github.io/muledump/docs/some/doc" \
         class="setuptools link somehelpdoc noclose">Help Docs</a> for more info \
 ');
@@ -533,7 +533,7 @@ setuptools.lightbox.display('myspace-method');
 $('.setuptools.link.somehelpdoc').click(function(e) { setuptools.lightbox.ajax(e, {title: 'My help title'}, this); });
 ```
 
-This creates a lightbox with a link in its message. When the link is clicked the Ajax response data is processed for links and displayed in a lightbox. The class noclose prevents SetupTools from erasing the previous page so when the user closes the help doc they are returned to the original page. 
+This creates a lightbox with a link in its message. When the link is clicked the Ajax response data is processed for links and displayed in a lightbox. The class noclose prevents SetupTools from erasing the previous page so when the user closes the help doc they are returned to the original page.
 
 #### setuptools.lightbox.cancel(string page)
 
@@ -574,7 +574,7 @@ var object = {
 
 #### setuptools.lightbox.error(string message [, number code=0])
 
-Creates and displays an error page with the specified information. Terminates program execution by throwing a new error. 
+Creates and displays an error page with the specified information. Terminates program execution by throwing a new error.
 
 #### setuptools.lightbox.menu.context.create(string title, object position, object options[, jQuery self])
 
@@ -651,7 +651,7 @@ Returns true or false for the status of the specified context menu.
 
 #### setuptools.lightbox.menu.context.close([string name, boolean keep])
 
-Closes any open context menu and will removed selected class from any provided jQuery object. 
+Closes any open context menu and will removed selected class from any provided jQuery object.
 
 If keep is true, it will close all menus except the specified menu.
 
@@ -660,7 +660,7 @@ If keep is true, it will close all menus except the specified menu.
 Creates and managed a paginated display (think accounts manager or either column in the group editor).
 
 ##### PageList
-Format A: 
+Format A:
 ```js
 var PageList = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 100"];
 ```
@@ -712,9 +712,9 @@ var Modifiers = {
 If you PageList is a Format B (see above) you can attach the search feature to specified keys:
 ```js
 var PageList = [
-    {user: 'blah', someoption: true}, 
-    {user: 'ick', someoption: true}, 
-    {user: 'oof', someoption: true}, 
+    {user: 'blah', someoption: true},
+    {user: 'ick', someoption: true},
+    {user: 'oof', someoption: true},
     {user: 'doh', someoption: true}
 ];
 var Modifiers = {search: {key: 'user'}};
@@ -749,7 +749,7 @@ Name of the search menu to keep when taking focus.
 Resets all or specified pagination data back to a clear state. If reset=true, ActionContainer is reset to page 0.
 
 #### setuptools.lightbox.menu.paginate.findPage(string searchIndex, string ActionContainer)
- 
+
 Locates page of specified searchIndex and updates state.currentPage.
 
 #### setuptools.lightbox.menu.paginate.pageUpdate(boolean close, function ActionContext, object ActionContextOptions)
@@ -760,7 +760,7 @@ Refreshes page bindings after the page has been updated.
 
 If true, any open context menus are closed.
 
-##### ActionContext 
+##### ActionContext
 
 Function or array of functions to execute.
 
@@ -770,9 +770,9 @@ Object passed to ActionContext functions.
 
 #### setuptools.lightbox.tooltip(jQuery parent, html content[, object modifiers])
 
-Displays a tooltip above the parent element. 
+Displays a tooltip above the parent element.
 
-##### Possible Modifiers 
+##### Possible Modifiers
 
 ```js
 var Modifiers = {
@@ -887,7 +887,7 @@ Displays a confirmation page to delete the specified list og groups.
 
 Accepts a JQuery selector of selected groups from the groups list or a comma-separated string of groups.
 
-#### setuptools.app.groups.copy(string groupName[, string newGroupName]) 
+#### setuptools.app.groups.copy(string groupName[, string newGroupName])
 
 Displays a page to facilitate copying a group to a new group. Calling with newGroupName will alert the user that the name is a duplicate.
 
